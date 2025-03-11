@@ -130,7 +130,10 @@ namespace IterationStatements
         // 2. Write a method that displays the multiplication table (from 1 to 12) for a given integer.
         public static void DisplayMultiplicationTable(int number)
         {
-            
+            for (int i = 0; i < number; i++)
+            {
+                Console.WriteLine($"{i} x {number}={i * number }");
+            }
         }
         //    - Should print each line in the format: "1 * number = result"
 
@@ -143,9 +146,10 @@ namespace IterationStatements
             AreNumbersEqual(8, 9);
             IsEven(4); 
             IsPositive(5);
-            CanVote(17);
-            IsInRange(9);
-            
+            CanVote(44);
+            IsInRange(6);
+            DisplayMultiplicationTable(12);
+
         }
         
         
